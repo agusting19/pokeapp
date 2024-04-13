@@ -1,7 +1,11 @@
+import CardsList from "@/components/cardsList"
+import Header from "@/components/header"
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>PokeApp Front</h1>
+    <main className="bg-zinc-50 w-full">
+      <Header />
+      <CardsList />
     </main>
   )
 }
