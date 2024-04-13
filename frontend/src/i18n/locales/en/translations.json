@@ -1,0 +1,18 @@
+{
+  "components": {
+    "header": {
+      "title": "PokeApp",
+      "language": "Es"
+    },
+    "themeButton": {
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Welcome to PokeApp",
+      "description": "This is a simple app to search for Pokemon"
+    }
+  }
+}
