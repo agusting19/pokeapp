@@ -5,7 +5,7 @@ export const fetchPokemonList = async (limit: number, page: number) => {
   const offset = limit * (page - 1)
   try {
     const response = await fetch(
-      `${API_BASE_URL}?limit=${limit}&offset=${offset}`
+      `${API_BASE_URL}/pokemon?limit=${limit}&offset=${offset}`
     )
 
     if (!response.ok) {
@@ -24,7 +24,7 @@ export const fetchPokemonList = async (limit: number, page: number) => {
 
 export const fetchPokemonInfo = async (id: string) => {
   try {
-    const response = await fetch(`${API_BASE_URL}/${id}`)
+    const response = await fetch(`${API_BASE_URL}/pokemon/${id}`)
 
     if (!response.ok) {
       throw new Error(
