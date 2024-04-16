@@ -62,9 +62,9 @@ export const getPokemonUtilInfo = async (url: string) => {
   }
 }
 
-export const getPokemonInfo = async (id: number) => {
+export const getPokemonInfo = async (url: string) => {
   try {
-    const response = await fetch(`${POKEMON_INFO_URL}/${id}`)
+    const response = await fetch(url)
 
     if (!response.ok) {
       throw new Error(
