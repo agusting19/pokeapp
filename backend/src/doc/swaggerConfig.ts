@@ -10,7 +10,7 @@ const options: swaggerJSDoc.Options = {
         "Simple REST API to fetch Pokémon data from pokeapi.co made with Express.js and TypeScript.",
     },
   },
-  apis: ["./routes/*.ts"],
+  apis: ["src/controllers/*.ts"],
 }
 
 const swaggerSpec = swaggerJSDoc(options)

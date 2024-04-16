@@ -3,7 +3,7 @@ import {
   getPokemonAllInfo,
   getPokemonById,
   getPokemonList,
-} from "../controllers/pokemonControllers"
+} from "../controllers"
 
 const router = Router()
 
